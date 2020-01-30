@@ -1,10 +1,106 @@
 <!DOCTYPE html>
 	<html> 
 		<head> 
-			<title> My webpage </title>
+			<title> My webpage </title> 
+			<!--margins around my page. The margin of an element space of outside of the border.-->
+			<!--padding is the space inside the border-->
+			<style> 
+				div {
+					background-color: green;
+					width: 1000px;
+					height: 50px;
+					margin: 90px;
+					padding: 30px;
+				}
+
+			</style>
 		</head>
 
-		<body> hello world Jessi!
+		<body> 
+
+			<!--div means section of the code -->
+			<div>
+
+						<!--style page-->
+			<h1 style="color:white; text-align:center;">HELLO WORLD</h1>  <!--HELLO WORLD will apear center and blue-->
+			<p style="color:#00cc44"> paragraph</p> <!--paragraph-->
+			<h1 style="color:#00cc44;">   hello world Jessi! Largest headline </h1>
+			</div>
+	
+			<h2>  Number One </h2>
+			<h2>  Number Two </h2>
+			<h3>  Green Tree </h3>
+			<h3>  Green Tree </h3>
+			<h4>  Four </h4>
+			<h4>  Four</h4>
+			<!--the problem of put all the style looks measy. so its beddor create that-->
+			<!--style save all colors used for page-->
+			<style>
+				h2 {
+					color: orange;
+					text-align: center;
+				}
+
+			</style>
+			<!--sbut instead of create an style have a file called style an there put all the colors that we want to use an call here as a link-->
+			<link rel="stylesheet" type="text/css" href="style.css">
+
+			<!--unorder list-->
+			<ol>
+				<li> one </li>
+				<li> two </li>
+				<li> three </li>
+				<li> four </li>
+			</ol>	
+			<!--order list-->
+			<ul>
+				<li> one </li>
+				<li> two </li>
+				<li> three </li>
+				<li> four </li>
+			</ul>	
+
+			<!--uploading images-->
+
+			<!--with this line the image doesn't render osea si vamos haciendo pequeno se oculta-->
+			<!-- <img src="image1.jpg" height="200" widht="300"> -->
+			<!--with this line the image render osea si vamos haciendo pequeno NO se oculta (RESPONSIVE!! IS GOOD) -->
+			<img src="image2.jpg"  height="20%" width="20%">
+
+			<!--RENDERING TABLES-->
+			<h1>Employees Names</h1>
+			<table> 
+				<tr> <!--table row-->
+					<th> First Name</th> <!--4 headers or columns-->
+					<th> Last Name </th>
+					<th> Direction </th>
+					<th> CellPhone </th>
+
+				</tr>
+				<tr> 
+					<td> JessicaA </td> <!--td means table data-->
+					<td> Cotrina </td>
+					<td> 330 angelo </td>
+					<td> 9874563777 </td>
+
+				</tr>
+					<tr> 
+					<td> Alej </td>
+					<td> Sanche </td>
+					<td> 330 angelo </td>
+					<td> 8745673899 </td>
+
+				</tr>
+
+			</table>	
+							<!--FORM HTML-->
+			<!--when we don't want to display information from the user but we want to collect information from the user-->
+			<form> 
+				<input type ="text" placeholder="fullName" name="name" > <!--placeholder information for the user, name means a name of the input field-->
+				<button>Submit!</button>
+
+			</form>
+
 		</body>
 		
 	</html>

@@ -1,0 +1,33 @@
+Git hub
+
+-- Create Repository online (git provides me a link)
+
+- in the terminar of my computer: git clone and the link 
+- change directory cd namerepository/
+- ls (show)
+
+adding code touch (create a new file)
+
+- touch hello.html
+
+add to the repository git add fileName
+
+- git add hello.html
+- git commit -m "Add line"
+
+ git status (helps to know what[s going on in our repository])
+
+ send changes to the repository with push
+- git push
+
+git pull (when someone else is working and I want to dowladed the latest version)
+
+Jessicas-MacBook-Pro-2:practice0 jessicacotrina$ git pull
+
+				MERGE CONFLICTS
+
+When the pull cant 
+
+
+
+
