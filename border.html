@@ -1,16 +1,74 @@
 <!DOCTYPE html>
-	<html> 
-		<head>
+	<html> <!--this means the begin of the content of the website-->
+		<head> <!--metada of the page is no gonna display on the page-->
 			<title> Welcome to my page! </title> 
 				<style> 
 					div {
 						border: 3px dotted blue;
 					}
+
+					/*link*/
+					a::before { /*before of the content add a symbol and say click here*/
+						content: "\21d2 Click here: "; 
+						font-weight: bold;
+					}
+
+					/*selection when I select the text that converts to yellow HIGHLIGHTS*/
+
+				 	p::selection {
+				 		color: red;
+				 		background-color: yellow;
+				 	}
+				 	/*when you see on the web page but when you print that does't show*/
+				 	@media print{
+				 		.screen-only {
+				 			display: none; /*make it not visible*/
+				 		}
+				 	}
+				/*allow to change style depending how narrow a particular webpage is*/
+
+					@media (min-width: 520px){
+				 		body {
+				 			background-color: lightblue; /*this mans that lightcolor only apply when the view of my window is at least 500px*/
+				 		}
+				 	}
+				 	@media (max-width: 519px){
+				 		body{
+				 			background-color: green;  /*make it not visible*/
+				 		}
+				 	}
+
 				</style>
 		</head>
 		<body>
+
+			<!--acall as a ref by id-->
+			<h2> Table of contents</h2> 
+			<ul> <!--creating a table-->
+				<li> <a href="#section1">Section 1</a> </li>
+				<li> <a href="#section2">Section 2</a> </li>
+				<li> <a href="#section3">Section 3</a> </li>
+			</ul>
+			
+
+
 			<div>
 			<h4> Hello </h4>
+			<a href="hello.html"> Click here!</a>  <!--a link to go to other page-->
+			<br>
+			<a href="https://www.google.com"> Click here! to go google</a>  <!--a link to go to other page-->
 			</div>
+
+
+			<h1 id="section1">Section 1</h1>	
+			<P> Git can keep track of changes made to code, synchronize code between different people, test changes to code without losing the original, and revert back to old versions of code</P>
+			<h1 id="section2">Section 2</h1>	
+			<P> Git can keep track of changes made to code, synchronize code between different people, test changes to code without losing the original, and revert back to old versions of code</P>
+			<h1 id="section3">Section 3</h1>	
+			<P> Git can keep track of changes made to code, synchronize code between different people, test changes to code without losing the original, and revert back to old versions of code</P>
+
+			<p class="screen-only"> THIS WONT PRINT</p>
+
+			
 		</body>
 	</html>

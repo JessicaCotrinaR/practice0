@@ -19,6 +19,28 @@
 		 		color: blue;
 		 	}
 
+		 	/*css allow style for indivual atrributes*/
+		 	input[type=text] { /* add color onlu the type input is text the input must be together with[]*/
+		 		background-color: blue;
+		 	}
+
+		 	input[type=password] { /* add color onlu the type input is text*/
+		 		background-color: red;
+		 	}
+
+		 	button {
+		 		width: 200px;
+		 		height: 50px;
+		 		font-size: 24px;
+		 		background-color: red;
+
+		 	}
+		 	button:hover{ /* change color when the punter is close to the button*/
+		 		background-color: orange;
+		 	}
+
+		 	
+
 		 </style> 
 		 <!-- # means id (the ids are unique)-->
 		 <!-- . means class (we can have differents names, when you want to style a bunch of different things use a class)-->
@@ -29,4 +51,42 @@
 			<div id="midle"> this is the <span class="name">midle</span> of my webpage </div>
 			<div id="bottom"> this is the <span class="name">bottom</span> of my webpage </div>
 			<div id="a"> this is the <span class="name">Jess</span> of my webpage </div>
+
+
+			<br>
+
+
+		
+
+			<form> 
+				<div>
+				<input type ="text" placeholder="fullName" name="name" > <!--placeholder information for the user, name means a name of the input field-->
+				<input type ="password" placeholder="Password" name="password" >
+				<button>Submit!</button>
+				</div>
+			<br>
+				<div>
+				Favorite color?
+				<br>
+				<input type ="color" name="color" value="green">  Green<!--placeholder information for the user, name means a name of the input field-->
+				<input type ="color" name="color" value="red"> Red
+				<input type ="color" name="color" value="yellow"> Yellow
+				
+				</div>
+
+			<br>
+			<!--DATA LIST-->
+				<div>
+				
+				<input  name="country" list ="countries"  placeholder="Country">  <!--placeholder information for the user, name means a name of the input field-->
+				<datalist id="countries">
+				<option value="Peru">
+				<option value="Argentina">
+				<option value="USA">
+				<option value="Canada">
+				<option value="Spain">
+				
+				</div>
+
+			</form>
 		</body>
